@@ -1,0 +1,505 @@
+/*
+
+TemplateMo 574 Mexant
+
+https://templatemo.com/tm-574-mexant
+
+*/
+
+/* ---------------------------------------------
+Table of contents
+------------------------------------------------
+01. font & reset css
+02. reset
+03. global styles
+04. header
+05. banner
+06. features
+07. testimonials
+08. contact
+09. footer
+10. preloader
+11. search
+12. portfolio
+
+--------------------------------------------- */
+/* 
+---------------------------------------------
+font & reset css
+--------------------------------------------- 
+---------------------------------------------
+reset
+--------------------------------------------- 
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
+s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+figure, header, nav, section, article, aside, footer, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+html[xmlns] .clearfix {
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header, nav, section, article, aside, footer, hgroup {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-block: 0px;
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+}
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+
+:root {
+  --primery-color:#2C712C;
+  --primery-blue:#5C85FF;
+  --light-green:#5CD65C;
+  --dark-gray:var(--dark-gray);
+  --ff-primery:'Inter', sans-serif;
+}
+ /* start Toggle Switch */
+switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-color: red;
+  position: relative;
+  width: 60px;
+  height: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+ /* end Toggle Switch */
+
+html,
+body {
+  background: #fff;
+  font-family: var(--ff-primery);
+}
+textarea {
+  resize: none;
+  outline-color: transparent;
+  width: 100%;
+  border-radius: 0.625rem;
+border: 3px solid #5CD65C;
+background: #FFF;
+box-shadow: 0px 0px 33.5px 0px rgba(0, 0, 0, 0.10);
+padding-inline: 0.94rem;
+padding-top: 0.81rem;
+color:var(--dark-gray);
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+min-height: 9.875rem;
+}
+.icon {
+  width: 1.8125rem;
+height: 1.8125rem;
+}
+.line-green {
+  width: 100%;
+  background-color: var(--light-green);
+}
+.line-green-text {
+  color: #9C9C9C;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 100%;
+}
+
+.bg-shadow {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: .7;
+}
+
+.outline-button {
+  border-radius: 0.6875rem;
+border: 2px solid var(--primery-color) ;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(190, 190, 190, 0.46);
+width: 50%;
+min-height: 2.9375rem;
+text-align: center;
+color: #000;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.blue-button {
+  border-radius: 0.625rem;
+  padding: 0.69rem 1.62rem 0.75rem 1.75rem;
+  background:var(--primery-blue);
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sherd_box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transform: translate(-50% , -50%);
+  background-color: white;
+  border-radius: 1.25rem;
+  z-index: 2;
+  padding-block:clamp( 2rem , 4vw , 4.75rem) ;
+  width: 75%;
+}
+.sherd_box .titel {
+  color: #000;
+  font-size: 1.4375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-block: 1rem;
+}
+.sherd_box .commen_box {
+  border-radius: 1.25rem;
+background: #FFF;
+box-shadow: 0px 0px 33.5px 0px rgba(0, 0, 0, 0.25);
+padding: 1rem;
+}
+.sherd_box .commen_box  .box-icon {
+  width: 2.875rem;
+height: 2.875rem;
+}
+.sherd_box .commen_box  .box-titel{
+  color: #000;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-block: 1rem;
+}
+.sherd_box .commen_box  .box-discrption{
+  color: var(--dark-gray);
+  text-align: center;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  max-width: 23ch;
+  margin-inline: auto
+}
+.small-logo {
+  width: 6.8125rem;
+  height: 2.8125rem;
+}
+@media (min-width:740px) {
+  .sherd_box {
+    width: 60%;
+  }
+  .sherd_box .titel  {
+    margin-block:  clamp(2rem , 4vw , 3.81rem) clamp( 2.12rem , 6vw , 4.12rem);
+  }
+  .sherd_box .commen_box  .box-titel {
+    margin-block: 1.5rem 2.25rem;
+  }
+  .sherd_box .commen_box {
+    padding: 1.5rem 1.31rem 2.31rem;
+  }
+}
+
+/* 
+---------------------------------------------
+type of you going to chose
+--------------------------------------------- 
+*/
+
+.line-titel {
+  color: #000;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.bottom-subtext {
+  color: var(--dark-gray);
+text-align: center;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+max-width: 50ch;
+margin-inline: auto;
+margin-top: 3rem;
+}
+
+/* 
+---------------------------------------------
+Demande publique section
+--------------------------------------------- 
+*/
+
+.bold-text {
+  color: #000;
+font-size: 1.0625rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+}
+.file-box {
+  border-radius: 0.9375rem;
+background: rgba(92, 133, 255, 0.20);
+height: 7.3125rem;
+overflow: hidden;
+display: grid;
+place-items: center;
+margin-top: 1.19rem;
+}
+@media (min-width:996px) {
+  .file-box {
+    margin-right: 1rem;
+  }
+}
+.file-box img{
+  width: 7rem;
+}
+
+.fillter-button {
+  color: #000;
+font-size: clamp(0.625rem , 6vw , 1rem) ;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: left;
+}
+.blue-wight {
+transform: rotate(-5.999deg);
+background: #5C85FF;
+padding: .3rem;
+}
+.blue-wight p {
+color: #FFF;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.bottom-titel {
+  color: #999;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* 
+---------------------------------------------
+start navbar section
+--------------------------------------------- 
+*/
+
+header {
+  height: 5.5rem;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
+.username {
+  color: #000;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* 
+---------------------------------------------
+start sidebar section
+--------------------------------------------- 
+*/
+.email {
+  color: #9C9C9C;
+  font-size: 0.625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sidebar-link  {
+  color: #000;
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.bold-line {
+  height: 0.09375rem;
+  background-color: #2C712C;
+}
+
+.sidebar-sprater {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  max-width: 15ch;
+}
+
+.logout-link {
+  color: #F00;
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 2.75rem;
+}
+
+/* 
+---------------------------------------------
+start home section
+--------------------------------------------- 
+*/
+
+.home-page {
+  padding-top: 3.62rem;
+}
+
+.home-page .left-content {
+  border-radius: 1.25rem;
+background: #FFF;
+box-shadow: 0px 4px 33.5px 0px rgba(0, 0, 0, 0.15);
+}
+.home-page .right-content {
+  border-radius: 1.25rem;
+  background: #FFF;
+  box-shadow: 0px 0px 33.5px 0px rgba(0, 0, 0, 0.10);
+height: 18.8125rem;
+padding: 1.31rem;
+text-align: center;
+}
+
+.home-page .right-content .titel {
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin-block: 2rem 1.88rem;
+
+}
+.home-page .right-content .discrption {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
